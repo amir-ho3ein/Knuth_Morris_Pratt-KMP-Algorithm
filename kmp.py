@@ -19,5 +19,6 @@ while i<len(text) and j<len(pattern):
     else:
         if (j==0):
             i+=1
-        j=pattern_num[j-1]
+        else:
+            j=pattern_num[j-1]
 print((i-j,i) if j!=0 else "not match!")
